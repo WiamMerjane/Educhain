@@ -1,5 +1,4 @@
 # Educhain
-Here’s the "How to Run" section in English for your README file:
 
 ---
 
@@ -66,4 +65,3 @@ Follow the steps below to launch the Educhain platform:
 
 ---
 
-This version is ready to include in an English-language README file.
