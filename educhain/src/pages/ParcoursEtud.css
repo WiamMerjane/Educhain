@@ -1,0 +1,85 @@
+/* Conteneur principal de la page Parcours des étudiants */
+.parcours-container {
+    display: flex;
+    margin-left: 250px;  /* Décalage pour la sidebar à gauche */
+    padding: 20px;
+    height: 100vh;  /* Prendre toute la hauteur de la fenêtre */
+    align-items: flex-start;  /* Assure que tout commence en haut de la page */
+    justify-content: flex-start;  /* Ne centre pas le contenu */
+  }
+  
+  /* Contenu principal de la page */
+  .main-content {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px; /* Limiter la largeur du contenu */
+    margin-left: 20px; /* Espace entre la sidebar et le contenu */
+    text-align: left;
+  }
+  
+  /* Titre de la page Parcours des étudiants */
+  .main-content h2 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Tableau des étudiants */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Style pour les entêtes de la table */
+  .table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  /* Entêtes de la table avec un fond bleu */
+  .table th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* Lignes de la table alternées avec un fond gris clair */
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Survol des lignes de la table */
+  .table tr:hover {
+    background-color: #ddd;
+  }
+  
+  /* Activités récentes */
+  .recent-activities {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .recent-activities h3 {
+    margin-bottom: 15px;
+    color: #34495e;
+  }
+  
+  .recent-activities ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+  

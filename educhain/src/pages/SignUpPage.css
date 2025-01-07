@@ -1,0 +1,49 @@
+.signup-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-card {
+    border-radius: 10px;
+    border: none;
+    padding: 2rem; /* Augmentez l’espace intérieur pour agrandir la carte */
+    width: 100%; /* Ajout pour une largeur maximale */
+    max-width: 600px; /* Largeur maximale pour les grands écrans */
+}
+
+.signup-card h2 {
+    font-size: 2rem; /* Augmente légèrement la taille de l’en-tête */
+    color: #007bff;
+    font-weight: bold;
+}
+
+.signup-card .form-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.signup-card .form-control {
+    border-radius: 5px;
+    padding: 1rem; /* Augmente l’espace intérieur pour agrandir les champs */
+}
+
+.signup-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.1rem; /* Augmente la taille de la police du bouton */
+}
+
+.signup-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Aligner les champs à gauche */
+.signup-card .left-align {
+    text-align: left;
+}

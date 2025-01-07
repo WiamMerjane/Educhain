@@ -1,0 +1,23 @@
+.certificate-container {
+    display: flex;
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  .certificate-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .certificate-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #34495e;
+  }
+  
+  .certificate-list {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,235 @@
+/* Assurez-vous que l'arrière-plan de la fenêtre soit blanc */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  
+  /* Navbar Styles */
+  .verification-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Logo dans la navbar */
+  .brand-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .verification-navbar .nav-link {
+    color: #555;
+    margin-right: 15px;
+  }
+  
+  .verification-navbar .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Page Styles */
+  .scan-cert-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffffff;
+    height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Container Styles */
+  .verification-portal {
+    margin-top: 10px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .verification-portal h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .verification-portal p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #ffffff;
+  }
+  
+  .upload-form input[type="file"] {
+    margin-bottom: 15px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .upload-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .upload-form button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+ /* Agrandir le cadre de téléchargement */
+.file-upload-frame {
+    border: 2px dashed #007bff;
+    padding: 80px;  /* Augmenter encore le padding pour rendre le cadre plus grand */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .file-upload-label {
+    display: block;
+    font-size: 1.5rem;  /* Agrandir la taille du texte */
+    color: #007bff;
+  }
+  
+  .upload-text {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .file-upload-frame input[type="file"] {
+    display: none; /* Cacher l'élément input du fichier */
+  }
+  
+  /* Result Box */
+  .result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+ /* Résultat de la vérification (Succès) */
+.result-box.success {
+    background-color: #dff0d8;  /* Fond vert pâle */
+    color: #3c763d;  /* Texte vert foncé */
+    font-size: 1.2rem;  /* Agrandir la taille du texte pour plus de visibilité */
+    border: 2px solid #3c763d;  /* Bordure verte */
+  }
+  
+  
+  /* Résultat de la vérification (Erreur) */
+.result-box.error {
+    background-color: #f2dede;  /* Fond rouge pâle */
+    color: #a94442;  /* Texte rouge foncé */
+    font-size: 1.2rem;  /* Agrandir la taille du texte */
+    border: 2px solid #a94442;  /* Bordure rouge */
+  }
+  
+  .result-box ul {
+    padding: 0;
+    list-style: none;
+  }
+  /* Style du message de résultat */
+/* Style du message de résultat */
+.message {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .message .icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    animation: bounce 0.8s ease-in-out infinite;
+  }
+  
+  /* Animations d'icône */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Texte du message */
+  .message .message-text {
+    flex-grow: 1;
+  }
+  
+  .message .message-text h4 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .message .message-text p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Style de succès */
+  .message.success {
+    background-color: #d4edda;  /* Fond vert pâle */
+    color: #155724;  /* Texte vert foncé */
+    border: 2px solid #28a745;  /* Bordure verte */
+  }
+  
+  /* Style d'erreur */
+  .message.error {
+    background-color: #f8d7da;  /* Fond rouge pâle */
+    color: #721c24;  /* Texte rouge foncé */
+    border: 2px solid #dc3545;  /* Bordure rouge */
+  }
+  
+  /* Animation au survol */
+  .message:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Style du texte et des icônes pour améliorer l'UX */
+  .message .icon {
+    animation: pulse 1.2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
